@@ -1,0 +1,21 @@
+﻿syntax = "proto3";
+
+option csharp_namespace = "GrpcService";
+
+import "google/api/annotations.proto";
+
+package notification;
+
+service Notification 
+{
+	rpc CreateNotification(CreateNotificationRequest) returns (CreateNotificationResponse);
+}
+
+message CreateNotificationRequest {
+	int32 todoId = 1;
+	string notification = 2;
+}
+
+message CreateNotificationResponse {
+	int32 id = 1;
+}

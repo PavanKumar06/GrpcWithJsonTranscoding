@@ -8,8 +8,10 @@ package todo;
 
 service ToDo 
 {
+	//When it comes to sending a gRPC request there is no such thing as POST/GET etc (No HTTP Methods)
 	rpc CreateToDo(CreateToDoRequest) returns (CreateToDoResponse)
 	{
+		//This is the JSON Transcoding part, this specifies the REST endpoint.
 		option (google.api.http) = {
 			post: "/v1/todo",
 			body: "*"
