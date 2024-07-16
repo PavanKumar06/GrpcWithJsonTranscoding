@@ -5,8 +5,6 @@ Established Service to Service communication!!!
 
 Created CRUD operations for the ToDoService.
 
-Created NotificationService that communicates with the ToDoClient
-
-To Send Notifications for the ToDo item.
+Created NotificationService that communicates with the ToDoClient, to send Notifications for the ToDo item.
 
 Saved all data to Database in SQLite
